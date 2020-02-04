@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Currency_converter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Никита гей" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gtr-Nu-wKv">
+                                <rect key="frame" x="10" y="347" width="394" height="212"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pxV-Mf-IL4">
+                                <rect key="frame" x="0.0" y="44" width="414" height="293"/>
+                            </pickerView>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Scw-XD-Mc3">
+                                <rect key="frame" x="0.0" y="569" width="414" height="216"/>
+                            </pickerView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="y5V-YK-Qpk">
+                                <rect key="frame" x="197" y="438" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Scw-XD-Mc3" firstAttribute="top" secondItem="gtr-Nu-wKv" secondAttribute="bottom" constant="10" id="0cM-Ww-LJU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Scw-XD-Mc3" secondAttribute="trailing" id="6iD-zS-WP9"/>
+                            <constraint firstItem="y5V-YK-Qpk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7dl-ev-i2p"/>
+                            <constraint firstItem="Scw-XD-Mc3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="E1j-Ys-Qf8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gtr-Nu-wKv" secondAttribute="trailing" constant="1010" id="FQP-9s-1gs"/>
+                            <constraint firstItem="pxV-Mf-IL4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Mqf-tQ-uO7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gtr-Nu-wKv" secondAttribute="bottom" constant="303" id="OiV-B5-RhH"/>
+                            <constraint firstItem="gtr-Nu-wKv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="Wyf-Dd-da4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gtr-Nu-wKv" secondAttribute="trailing" constant="10" id="Yi5-8r-lOC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pxV-Mf-IL4" secondAttribute="trailing" id="Z9M-Xk-nzi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gtr-Nu-wKv" secondAttribute="trailing" constant="10" id="be6-d3-n4A"/>
+                            <constraint firstItem="gtr-Nu-wKv" firstAttribute="top" secondItem="pxV-Mf-IL4" secondAttribute="bottom" constant="10" id="elG-jE-LvL"/>
+                            <constraint firstItem="gtr-Nu-wKv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="hMv-aA-Hl2"/>
+                            <constraint firstItem="gtr-Nu-wKv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="hXZ-7P-hHH"/>
+                            <constraint firstItem="gtr-Nu-wKv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="303" id="khh-jo-jSU"/>
+                            <constraint firstItem="y5V-YK-Qpk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="nmS-ch-qg0"/>
+                            <constraint firstItem="pxV-Mf-IL4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="uLf-ID-VFt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="y5V-YK-Qpk" id="Sk4-xC-HMN"/>
+                        <outlet property="label" destination="gtr-Nu-wKv" id="qUc-uC-EKW"/>
+                        <outlet property="pickerFrom" destination="pxV-Mf-IL4" id="0V1-Dl-BHZ"/>
+                        <outlet property="pickerTo" destination="Scw-XD-Mc3" id="Afn-3n-Dol"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
